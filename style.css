@@ -29,6 +29,9 @@ body {
     display: grid;
     place-items: center;
     color: var(--desaturated-blue);
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
        
 }
 
@@ -64,6 +67,11 @@ main {
 
     main .payment-btn, main .plan {
         margin: 1rem 2.5rem;
+    }
+
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
+        background-size: contain;
     }
 
     
@@ -116,6 +124,11 @@ h2 {
     grid-row-end: 3;
 }
 
+.change-btn:hover {
+    color:hsl(224, 23%, 55%);
+    transition: color .2s ease-in-out;
+}
+
 .payment-btn {
     margin: 0.75rem 1.5rem;
     padding: 1rem;
@@ -127,6 +140,12 @@ h2 {
     font-weight: 900;
 }
 
+.payment-btn:hover {
+    background: hsla(245, 78%, 79%, 1);
+    cursor: pointer;
+    transition: background-color .2s ease-in-out;
+  }
+
 .cancel-btn {
     margin: 0 2rem 1rem;
     padding: 1rem;
@@ -134,6 +153,11 @@ h2 {
     color: var(--desaturated-blue);
     font-weight: 900;
     border-style: none;
+}
+
+.cancel-btn:hover {
+    color:hsl(223, 47%, 13%);
+    transition: color .2s ease-in-out;
 }
 
 .music-icon {
